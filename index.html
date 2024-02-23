@@ -1,43 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>GitHub Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .banner {
+            max-width: 100%;
+            animation: animateBanner 2s infinite;
+        }
+        @keyframes animateBanner {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Mi Página Web</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca-de">Acerca de</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="inicio">
-            <h2>Inicio</h2>
-            <p>Bienvenido a mi página web.</p>
-        </section>
-        <section id="acerca-de">
-            <h2>Acerca de</h2>
-            <p>soy estudiante de ingenieria electronica y telecomunicacion.</p>
-        </section>
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <p>reparacion de equipos de audio y video preofesional broadcast.</p>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Formulario de contacto y detalles de contacto.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Mi Página Web</p>
-    </footer>
+    <img class="banner" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjNkZWxiNGdrYWNtZTk2MmpqM2dzcmJ3bnVrdmltYm1jY2d2dDI3ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iK7UmUPdVqHPR0yJUc/giphy-downsized-large.gif" alt="Banner animado">
 </body>
 </html>
