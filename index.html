@@ -43,35 +43,28 @@
 </head>
 <body>
     <header>
-        <h1>Mi Página de Inicio</h1>
+        <h1 id="pageTitle">Mi Página de Inicio</h1>
         <img src="https://placekitten.com/1200/300" alt="Banner">
     </header>
     <nav>
-        <a href="#home">Inicio</a>
-        <a href="#about">Acerca de</a>
-        <a href="#services">Servicios</a>
-        <a href="#contact">Contacto</a>
+        <a href="#" onclick="cambiarContenido('Inicio', 'Bienvenido a mi página de inicio.'); return false;">Inicio</a>
+        <a href="#" onclick="cambiarContenido('Acerca de', 'Información sobre nuestra empresa.'); return false;">Acerca de</a>
+        <a href="#" onclick="cambiarContenido('Servicios', 'Descubre nuestros servicios.'); return false;">Servicios</a>
+        <a href="#" onclick="cambiarContenido('Contacto', 'Contáctanos para más información.'); return false;">Contacto</a>
     </nav>
-    <main>
-        <section id="home">
-            <h2>Inicio</h2>
-            <p>Bienvenido a mi página de inicio.</p>
-        </section>
-        <section id="about">
-            <h2>Acerca de</h2>
-            <p>Información sobre nuestra empresa.</p>
-        </section>
-        <section id="services">
-            <h2>Servicios</h2>
-            <p>Descubre nuestros servicios.</p>
-        </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>Contáctanos para más información.</p>
-        </section>
+    <main id="mainContent">
+        <h2>Inicio</h2>
+        <p>Bienvenido a mi página de inicio.</p>
     </main>
     <footer>
         <p>&copy; 2024 Mi Compañía. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        function cambiarContenido(titulo, contenido) {
+            document.getElementById('pageTitle').textContent = titulo;
+            document.getElementById('mainContent').innerHTML = '<h2>' + titulo + '</h2><p>' + contenido + '</p>';
+        }
+    </script>
 </body>
 </html>
